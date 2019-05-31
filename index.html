@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Bem-vindo ao meu Site</title>
+<style>
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+    
+/* Sintaxe Geral 
+    @media tipo_de_midia operador (condição/ões) {
+        regras CSS
+    }
+    
+    -tipos de mídia: 
+    screen, all, print, tv, braile etc
+    
+    -operadores: 
+    and (e), only (apenas), not (não)
+*/   
+    @media screen and (max-width: 600px) {
+        body { 
+            background-color: yellow; 
+        }
+    }
+    
+    @media print {
+        h1 { color: blue; }
+        img { 
+            /*display: none;*/ 
+            filter: grayscale(100%);
+        }
+    }
+    
+    @media only screen and (orientation: landscape) {
+        body { background-color: blanchedalmond; }
+    }
+   
+    @media screen and (min-width: 574px) {
+        h2 { 
+            text-align: center; 
+            color: red;
+        }            
+    }
+    
+    @media screen and (min-width: 668px) {
+        h2 {
+            text-align: center;
+            color: black;
+        }
+    }
+    
+    
+</style>
+</head>
+<body>
+    <h1>Bem-vindo ao meu Site</h1>
+    <hr>
+    <h2>Criando um exemplo </h2>
+    <p>Oi oi oi oi</p>
+    
+    <h2>Teste de site</h2>
+    
+    
+    <hr>
+    <img src="imagens/pink-floyd.jpg" alt="">
+    
+</body>
+</html>
